@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<link rel="stylesheet" href="styles.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<!-- data healing introduction, image, neema etc-->
+<div class="two-column-container">
+  <h2 class="glossy-text">DATA HEALING</h2>
+  <div class="centered-text">technodoula (tek-noh-doo-lah): "the people stewarding us having a more positive relationship with technology" - olivia m. ross
+  </div>
+</div>
+
+
+
+<div class="container" id="dataTrauma">
+  <span class="typed-out"></span>
+  <span class="cursor"></span>
+</div>
+
+<script>
+  var i = 0;
+  var txt = 'Data Trauma is a term first coined by the cyber-doula Olivia Ross to refer to manifestations of harm that emerged in the digital realm as a reflection and amplification of the trauma we face in the physical world. The internet, much like the “real” world, has been plagued by racism, sexism, ableism, classism, and transphobia. What was fed to us as a space of limitless possibility was in reality a breeding ground for our most violent behaviors. Data trauma is when you scrolled down your feed and would encounter imagery of violence alongside memes and selfies. It is the impact of this glaring incongruity. Data trauma also took shape in the form of censorship and deplatforming— something that occurred regularly to sex workers who were penalized, censored or even removed altogether from their digital platforms.';
+  var additionalTxt = 'If there is data trauma, then there must be data healing.';
+  
+  var speed = 50;
+  var dataTraumaElement = document.querySelector(".typed-out");
+  var cursorElement = document.querySelector(".cursor");
+
+  function toggleCursor() {
+    cursorVisible = !cursorVisible;
+    cursorElement.style.display = cursorVisible ? "inline-block" : "none";
+    setTimeout(toggleCursor, 500); // Toggle cursor visibility every 500ms
+  }
+  function typeWriter() {
+    if (i < txt.length) {
+      dataTraumaElement.innerHTML += txt.charAt(i);
+      i++;
+      setTimeout(typeWriter, speed);
+      cursorElement.style.display = "inline-block"; // Show cursor while typing
+    } else {
+      dataTraumaElement.innerHTML += '<br><br>';
+      setTimeout(typeAdditional, 1000); // Delay before typing additional text
+      cursorElement.style.display = "inline-block"; // Show cursor after typing is complete
+    }
+  }
+
+  function typeAdditional() {
+    if (i < txt.length + additionalTxt.length) {
+      dataTraumaElement.innerHTML += additionalTxt.charAt(i - txt.length);
+      i++;
+      setTimeout(typeAdditional, speed);
+    }
+  }
+  window.onload = function() {
+    typeWriter();
+    toggleCursor();
+  };
+</script>
+
+
+
+
+<!-- add music with muted autoplay -->
+<audio id="bgAudio" loop muted>
+  <source src="/media/reflected-light-147979.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+
+<script>
+  function playAudio() {
+    var audio = document.getElementById('bgAudio');
+    audio.muted = false; 
+    audio.play();
+    document.removeEventListener('mousemove', playAudio);
+  }
+  document.addEventListener('mousemove', playAudio);
+  
+</script>
+
+
+<!-- include descriptions of each portal.. -->
+
+<div class = "folders">
+
+<div class="tech">
+  <a class="tech-folder" href="technology.html">
+    <img src="media/180.png" alt="tech">
+  </a>
+  <div class="tech-text">Technology</div>
+</div>
+
+<div class = "nature">
+  <a class="nature-folder" href="nature.html">
+    <img src = "media/090.png" alt = "nature">
+  </a>
+  <div class = "nature-text" alt = "nature">Nature</div>
+
+</div>
+
+<div class = "spirituality">
+  <a class="spirituality-folder" href="spirituality.html">
+    <img src = "media/280.png" alt = "spirituality">
+  </a>
+  <div class = "spirituality-text">Spirituality</div>
+</div>
+ 
+<div class = "reparations">
+  <a class="reparations-folder" href="reparations.html">
+    <img src = "media/360.png" alt = "reparations">
+  </a>
+  <div class = "reparations-text">Reparations</div>
+</div>
+</div>
+
+<div class = "about">
+  <a href = "about.html">
+    <img src = "media/010.png">
+  </a>
+  <div class = "about-text">About</div>
+
+ 
+
+
+
+</div>
+
+  
+
+  
+
+
+</body>
+</html>

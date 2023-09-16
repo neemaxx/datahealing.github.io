@@ -1,0 +1,345 @@
+body {
+  background-image: url('media/aedrian-drgmmd6Buyc-unsplash.jpg');
+  background-size: cover;
+  padding-top: 100px;
+  justify-content: space-between; /* Distribute content to the start and end */
+  align-items: center; /* Vertically center the content */
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  
+  
+  
+}
+/* Clear default margin and padding for body and p */
+body, p {
+  margin: 0;
+  padding: 0;
+}
+
+.fade-in-out {
+  animation: fadeInOut 6s ease forwards;
+  padding-top: 50px;
+  color: rgb(4, 134, 28);
+  font-size: 90px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  font-weight: bold;
+  z-index: 999;
+  pointer-events: none; /* Disable pointer events when it's not visible */
+
+
+}
+
+@keyframes fadeInOut {
+  0%, 100% {
+      opacity: 0;
+  }
+  50% {
+      opacity: 1;
+  }
+}
+
+#element1 {
+  animation-delay: 0s; /* No delay for the first element */
+}
+
+#element2 {
+  animation-delay: 6s; /* No delay for the first element */
+  opacity: 0;
+  font-size: 120px;
+}
+
+.text-container {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding-top: 100px;
+  width: 300px;
+  height: 300px
+  
+  
+}
+
+.arena {
+  transform: scale(0.5,0.5);
+  position: absolute;
+  top: 80px;
+  left: 200px;
+  font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Arial, sans-serif;
+}
+
+.logo-text{
+  font-size: 40px;
+  position: relative;
+  top: 10px;
+  left: 90px;
+  color: white;
+  font-weight: bold;
+}
+
+
+.thumbnail {
+  display: inline-block;
+  margin: 10px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+  max-width: 150px;
+  height: auto;
+}
+
+.thumbnail:hover {
+  opacity: 0.8;
+}
+
+/* Lightbox overlay styles */
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 80%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+.image-container {
+  /* This is where you would put any styling specific to your image containers */
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+}
+
+.sticky-note {
+  background-color: #13de20;
+  width: 200px;
+  padding: 15px;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: small;
+}
+
+#shinichi{
+  right: 80px;
+  top: 80px;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.close-button {
+  cursor: pointer;
+}
+
+.content {
+  margin-top: 10px;
+}
+
+
+.thumbnail {
+  padding: 10px;
+  position: absolute;
+  text-align: center;
+  
+}
+
+#server-flowers{
+  bottom: 30px;
+  right: 50px;
+}
+
+#mother-trees{
+  bottom: 50px;
+  right: 300px;
+}
+
+#radical-reimagining{
+  bottom: 50px;
+  left: 500px;
+}
+
+
+.thumbnail img {
+  max-width: 100px;
+  cursor: pointer;
+}
+
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+  align-items: center; /* Center vertically */
+
+}
+
+.lightbox-content {
+  display: block;
+  margin: auto;
+  max-height: 90%;
+  max-width: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+.fungi {
+  position: absolute;
+  transform: scale(0.15,0.15);
+  top: 60px;
+  right: 700px;
+  text-align: center;
+}
+
+.fungi-text{
+  padding-top: 10px;
+  color: rgb(47, 231, 47);
+  font-size: 100px;
+  font-weight: bold;
+  font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Arial, sans-serif;
+}
+
+.ntu {
+  position: absolute;
+  top: 120px;
+  left: 400px;
+  transform: scale(0.4,0.4);
+  text-align: center;
+  
+}
+
+#ntusave {
+  border: 1px solid rgb(0, 0, 0); 
+  outline: 13px solid rgba(4, 87, 36, 0.989);
+}
+
+
+#mother_tree {
+  border: 0.5px solid rgb(0, 0, 0); 
+  outline: 4px solid rgba(4, 87, 36, 0.989);
+  
+}
+
+.ntu-text{
+  color: rgb(96, 227, 96);
+  font-size: 40px;
+  font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Arial, sans-serif;
+  font-weight: bold;
+}
+
+
+
+.mother-text,
+.server-text {
+  color: rgb(96, 227, 96);
+  font-size: 15px;
+  font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Arial, sans-serif;
+  font-weight: bold;
+}
+
+
+/* Reset some default styles */
+body, ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the desktop navigation bar */
+.desktop-bar {
+  background-color: #6cb769;
+  color: white;
+  padding: 3px 0;
+  font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Arial, sans-serif;
+  padding-left: 25px;
+  top: 0px;
+  position: absolute;
+  width: 100%;
+  
+  
+}
+
+.desktop-bar ul {
+  list-style-type: none;
+  
+}
+
+.desktop-bar li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.desktop-bar li#spirituality {
+  margin-right: 970px; /* Adjust the margin for the "Spirituality" list item */
+}
+
+.desktop-bar li#home {
+  font-weight: bold;
+}
+
+.desktop-bar li#tree {
+  color: rgb(0, 70, 0);
+  font-weight: bold;
+}
+
+
+.desktop-bar a {
+  text-decoration: none;
+  color: rgba(2, 59, 24, 0.989);
+  font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Arial, sans-serif;
+  font-size: 13px;
+}
+
+
+.live-time {
+  
+  top: 10px; /* Adjust the top and right values to position the time as desired */
+  right: 10px;
+  color: rgba(2, 59, 24, 0.989);
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-align: right;
+}

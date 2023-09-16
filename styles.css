@@ -1,0 +1,354 @@
+body {
+  background-color: rgb(146, 221, 246);
+  padding-top: 100px;
+  justify-content: space-between; /* Distribute content to the start and end */
+  align-items: center; /* Vertically center the content */
+  height: 100vh;
+  margin: 0;
+}
+
+/* Clear default margin and padding for body and p */
+body, p {
+  margin: 0;
+  padding: 0;
+}
+
+.two-column-container {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.glossy-text {
+  font-size: 42px;
+  font-family: 'Courier New', monospace;
+  color: #c88d8d; /* Rose gold text color */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+  background: linear-gradient(45deg, #ffcccc, #ffc2c2, #ffc2c2, #ffcccc); /* Rose gold gradient background */
+  background-size: 400% 400%;
+  text-align: left; /* Align the text to the left */
+  padding-left: 20px; /* Optional padding to create some space from the left edge */
+  padding-right: 40px;
+  -webkit-background-clip: text; /* Apply background as a clip to the text */
+  background-clip: text;
+  -webkit-text-fill-color: transparent; /* Make text transparent */
+  animation: gradient-animation 5s ease infinite; /* Animation for glossy effect */
+}
+
+/* Animation for the glossy effect */
+@keyframes gradient-animation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.centered-text {
+  font-size: 24px;
+  font-family: 'Courier New', monospace;
+  margin-top: 20px; /* Add margin to create space between Data Healing and Data Trauma */
+  white-space: normal; /* Allow text to wrap within the container */
+  overflow: auto; /* Add scrolling behavior to the div */
+  max-height: 60vh; /* Limit the height of the div and add scroll when the content overflows */
+  padding: 20px; /* Add padding to create space between text and background edges */
+  color: #b08686; /* Silver text color */
+  opacity: 1; /* Adjust the opacity of the text */
+  text-align: center;
+}
+
+.bottom-links {
+  font-size: 25px;
+  display: flex; /* Change the display to flex */
+  justify-content: center; /* Center the links horizontally */
+  margin-top: 20px; /* Add some top margin to create space between the text and links */
+  padding-bottom: 100px;
+  
+}
+
+.bottom-links a {
+  margin-right: 40px; /* Add right margin to create space between the links */
+  text-decoration: none; /* Remove the default underline on anchor tags */
+  color: rgb(197, 106, 106);
+  
+}
+
+/* Add space to the last link to prevent it from having unnecessary margin-right */
+.bottom-links a:last-child {
+  margin-right: 0;
+}
+
+.center-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Add some space between the content and the links */
+}
+
+.path {
+  font-size: 18px;
+  text-align: center;
+  font-family: 'Courier New', monospace;
+  color: rgba(24, 105, 52, 0.8); /* Dark green text color */
+    background: linear-gradient(45deg, #113726, #123428, #113726, #123428); /* Dark green gradient background */
+  background-size: 400% 400%;
+  padding-left: 20px; /* Optional padding to create some space from the left edge */
+  padding-right: 40px;
+  -webkit-background-clip: text; /* Apply background as a clip to the text */
+  background-clip: text;
+  -webkit-text-fill-color: transparent; /* Make text transparent */
+  animation: gradient-animation 5s ease infinite;
+
+}
+
+.data-trauma {
+  font-size: 15px;
+  font-family: 'Courier New', monospace;
+  margin-top: 20px; /* Add margin to create space between Data Healing and Data Trauma */
+  white-space: normal; /* Allow text to wrap within the container */
+  overflow: auto; /* Add scrolling behavior to the div */
+  max-height: 60vh; /* Limit the height of the div and add scroll when the content overflows */
+  padding: 20px; /* Add padding to create space between text and background edges */
+  color: #b08686; /* Silver text color */
+  opacity: 1; /* Adjust the opacity of the text */
+  padding-top: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center; /* Center-align the text */
+
+}
+
+.folders {
+  position: relative; /* Add this line to make .tech the positioned ancestor */
+  display: inline-block;
+  margin-right: 20px;
+  left: 85px;
+  padding-bottom: 400px;
+  
+}
+
+/* Keep your existing styles */
+
+.tech {
+  position: relative; /* Add this line to make .tech the positioned ancestor */
+  display: inline-block;
+  margin-right: 20px;
+  right: 120px;
+}
+
+.tech-folder {
+  transform: scale(0.1, 0.1);
+  position: absolute;
+  top: -440px; /* Adjust the top value as needed */
+  left: 0;
+}
+
+.tech-text {
+  font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Arial, sans-serif;
+  color: white;
+  font-size: 12px;
+  position: absolute;
+  left: 475px;
+  top: 130px;
+  padding-bottom: 20px;
+  font-weight: bold;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4); /* Increased shadow effect */
+
+}
+
+/* You can apply similar styles for other folder icons and texts */
+
+.nature {
+  position: relative; /* Add this line to make .tech the positioned ancestor */
+  display: inline-block;
+  margin-right: 20px;
+  right: 110px;
+}
+
+.nature-folder {
+  transform: scale(0.1,0.1);
+  position: absolute;
+  top: -440px;
+  left: 110px;
+  
+}
+
+.nature-text {
+  font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Arial, sans-serif;
+  color: white;
+  font-size: 12px;
+  position: absolute;
+  font-weight: bold;
+  top: 130px;
+  left: 600px;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4); /* Increased shadow effect */
+
+  
+}
+
+.spirituality{
+    position: relative; /* Add this line to make .tech the positioned ancestor */
+    display: inline-block;
+    margin-right: 20px;
+    right: 120px;
+  
+}
+
+.spirituality-folder {
+  transform: scale(0.1,0.1);
+  position: absolute;
+  top: -440px;
+  left: 250px;
+}
+
+.spirituality-text{
+  font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Arial, sans-serif;
+  color: white;
+  font-size: 12px;
+  position: absolute;
+  font-weight: bold;
+  top: 130px;
+  left: 730px;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4); /* Increased shadow effect */
+
+}
+
+.reparations {
+  position: relative; /* Add this line to make .tech the positioned ancestor */
+  display: inline-block;
+  margin-right: 20px;
+  right: 120px;
+}
+.reparations-folder {
+  transform: scale(0.1,0.1);
+  position: absolute;
+  top: -440px;
+  left: 370px;
+}
+
+.reparations-text {
+  font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Arial, sans-serif;
+  color: white;
+  font-size: 12px;
+  position: absolute;
+  font-weight: bold;
+  top: 130px;
+  left: 846px;
+  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4); /* Increased shadow effect */
+
+
+}
+.wrapper {
+  height: 50vh;
+  display: grid;
+  place-items: center;
+}
+
+.typing-cursor {
+  display: inline-block;
+  width: 8px;
+  height: 20px;
+  background-color: #000;
+  margin-left: 4px;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+
+.data-trauma-placeholder {
+  font-size: 18px;
+  font-family: 'Courier New', monospace;
+  white-space: normal; /* Allow text to wrap within the container */
+  opacity: 0; /* Initially hide the placeholder text */
+  max-width: 1200px;
+  max-height: max-content;
+  margin: 0 auto;
+  text-align: center; /* Center-align the text */
+}
+
+
+.container {
+  font-family: 'Courier New', monospace;
+  margin-top: 20px;
+  white-space: normal;
+  overflow: auto;
+  max-height: 400vh;
+  padding: 20px;
+  color: #b08686;
+  opacity: 1;
+  padding-top: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  height: 35vh;
+}
+
+
+/*
+
+.container {
+  font-size: 18px;
+  font-family: 'Courier New', monospace;
+  white-space: normal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; 
+  padding: 20px;
+  box-sizing: border-box;
+  max-width: 1200px;
+  text-align: cednter;
+  min-height: 500px;
+  
+}*/
+
+
+.typed-out {
+  overflow: hidden;
+  white-space: normal;
+  animation: typing 1s steps(20, end) forwards;
+  font-size: 1.6rem;
+  font-size: 18px;
+}
+
+.cursor {
+  display: inline-block;
+  width: 10px; /* Adjust the width of the cursor */
+  height: 20px; /* Adjust the height of the cursor */
+  background-color: #b08686; /* Cursor color */
+  margin-left: 5px; /* Adjust the margin as needed */
+  animation: blink 1s infinite;
+} 
+
+@keyframes blink {
+  0%, 100% { opacity: 0; } /* Cursor is invisible at the beginning and end */
+  50% { opacity: 1; } /* Cursor is visible in the middle of the animation */
+}
+
+.about {
+  position: absolute; /* Add this line to make .tech the positioned ancestor */
+  transform: scale(0.1,0.1);
+  top: 200px;
+  left: 180px;
+  text-align: center;
+}
+
+.about-text {
+  font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Arial, sans-serif;
+  color: white;
+  font-size: 120px;
+  font-weight: bold;
+  text-shadow: 40px 40px 40px rgba(0, 0, 0, 0.4); /* Increased shadow effect */
+
+}
+
+
+
+

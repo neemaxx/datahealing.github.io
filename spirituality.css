@@ -1,0 +1,257 @@
+body {
+  background-image: url('media/spirituality-background.png');
+  background-size: cover;
+  padding-top: 100px;
+  justify-content: space-between; /* Distribute content to the start and end */
+  align-items: center; /* Vertically center the content */
+  height: 100vh;
+  margin: 0;
+  
+  
+
+}
+
+body, div {
+  font-family: 'VT323', monospace;
+}
+
+body::before {
+  content: "";
+  background-color: rgba(255, 196, 59, 0.323); /* Yellow with 50% opacity */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Place the overlay behind other content */
+}
+
+.deepdown {
+  transform: scale(0.15,0.15);
+  position: absolute;
+  left: 500px;
+
+}
+
+.deepdown-text {
+  font-size: 130px;
+  text-align: center;
+  padding-top: 30px;
+  font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Arial, sans-serif;
+  font-weight: bold;
+}
+
+.elemental{
+  transform: scale(0.15,0.15);
+  position: absolute;
+}
+
+.elementalbreaths-text {
+
+  padding-top: 30px;
+  font-size: 130px;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Arial, sans-serif;
+  font-weight: bold;
+  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4); /* Increased shadow effect */
+  color: white
+
+}
+
+.threethousand {
+  transform: scale(0.35,0.35);
+  position: absolute;
+  left: 103px;
+  bottom: 10px;
+  
+}
+
+.pdf-text {
+  font-size: 23px;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Arial, sans-serif;
+  font-weight: bold;
+  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4); /* Increased shadow effect */
+  color: white;
+
+}
+
+.sticky-note {
+  background-color: white;
+  width: 200px;
+  padding: 15px;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  position: absolute;
+  font-size: small;
+}
+
+#ritual{
+  top: 80px;
+  left: 30px;
+}
+
+#green {
+  bottom: 200px;
+  right: 10px;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.close-button {
+  cursor: pointer;
+}
+
+.content {
+  margin-top: 10px;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+
+
+.thumbnail {
+  padding: 10px;
+  position: absolute;
+}
+
+#remember {
+  top: 30%;
+  left: 50%;
+  
+}
+
+#anxiety {
+  top: 40%;
+  left: 20%;
+  text-align: center;
+  
+}
+
+.thumbnail img {
+  max-width: 100px;
+  cursor: pointer;
+}
+
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+  align-items: center; /* Center vertically */
+
+}
+
+.lightbox-content {
+  display: block;
+  margin: auto;
+  max-height: 90%;
+  max-width: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+.remember-text, .anxiety-text {
+  font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Arial, sans-serif;
+  font-weight: bold;
+  color: white;
+  font-size: 13px;
+  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4); /* Increased shadow effect */
+  
+}
+
+body, ul {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* Style the desktop navigation bar */
+.desktop-bar {
+  background-color: #6b5c21;
+  color: white;
+  padding: 3px 0;
+  font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Arial, sans-serif;
+  padding-left: 10px;
+  
+  
+}
+
+.desktop-bar ul {
+  list-style-type: none;
+  
+}
+
+.desktop-bar li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.desktop-bar li#spirituality {
+  margin-right: 980px; /* Adjust the margin for the "Spirituality" list item */
+}
+
+.desktop-bar li#home {
+  font-weight: bold; /* Adjust the margin for the "Spirituality" list item */
+}
+
+
+
+.desktop-bar a {
+  text-decoration: none;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Arial, sans-serif;
+  font-size: 13px;
+}
+
+.live-time {
+  
+  top: 10px; /* Adjust the top and right values to position the time as desired */
+  right: 10px;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-align: right;
+}
+
+.arena {
+  position: absolute;
+  bottom: 900px;
+  left: 300%;
+  
+  
+}
+
+.logo-text{
+  font-size: 40px;
+  position: relative;
+  top: 10px;
+  left: 90px;
+  color: white;
+  font-weight: bold;
+  font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Arial, sans-serif;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4); /* Increased shadow effect */
+}

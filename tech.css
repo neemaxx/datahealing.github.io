@@ -1,0 +1,215 @@
+body {
+  background-image: url('media/tech-background.jpg');
+  background-size: cover;
+  padding-top: 100px;
+  justify-content: space-between; /* Distribute content to the start and end */
+  align-items: center; /* Vertically center the content */
+  height: 100vh;
+  margin: 0;
+  
+  font-family: 'VT323', monospace;
+}
+
+/* Clear default margin and padding for body and p */
+body, p {
+  margin: 0;
+  padding: 0;
+}
+
+
+.arena {
+  transform: scale(0.5,0.5);
+  position: relative;
+  top: 150px;
+  right: 100px;
+}
+.logo-text{
+  font-size: 40px;
+  position: relative;
+  top: 10px;
+  left: 90px;
+  color: white;
+}
+
+.femtech {
+  transform: scale(0.1, 0.1);
+  position: relative;
+  bottom: 550px;
+  right: 250px;
+}
+
+.femtech-text {
+  font-size: 170px;
+  position: relative;
+  top: 100px; 
+  color: white;
+  left: 500px;
+}
+
+.recovery-clinic {
+  transform: scale(0.15,0.15);
+  position: relative;
+  bottom: 2400px;
+  left: 400px;
+}
+
+.recovery-text{
+  font-size: 110px;
+  position: relative;
+  top: 100px; 
+  color: white;
+  left: -110px;
+}
+.popuptext {
+
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  top: -40px;
+  left: 15%;
+  transform: translateX(-50%);
+  margin-left: -80px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/*
+.arena:hover .popuptext {
+  visibility: visible;
+  opacity: 1;
+  bottom: 120%;
+  opacity: 1;
+}*/
+
+.traumagotchi {
+  font-family: 'VT323', monospace;
+  font-size: 18px;
+  color: white; /* Green color */
+  text-decoration: none;
+  display: inline-block;
+  border: 2px solid #00FF00;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.traumagotchi a {
+  color: #00FF00; /* Green color */
+  text-decoration: none;
+}
+
+.traumagotchi a:hover {
+  color: white;
+}
+
+.premiumconnect {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  transform: translate(-50%, -70%) scale(0.1);
+
+}
+
+.premiumconnect-text {
+  font-size: 100px;
+  text-align: center;
+  padding-top: 40px;
+  
+
+}
+
+.premiumconnect:hover {
+  color: #00FF00; /* Change to your desired hover color */
+}
+
+.sticky-note {
+  background-color: #ffd700;
+  width: 200px;
+  padding: 15px;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  position: absolute;
+  top: 40px;
+  left: 10px;
+  font-size: small;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.close-button {
+  cursor: pointer;
+}
+
+.content {
+  margin-top: 10px;
+}
+
+/* Reset some default styles */
+body, ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the desktop navigation bar */
+.desktop-bar {
+  background-color: #0a5307;
+  color: white;
+  padding: 3px 0;
+  font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Arial, sans-serif;
+  padding-left: 25px;
+  
+  
+}
+
+.desktop-bar ul {
+  list-style-type: none;
+  
+}
+
+.desktop-bar li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.desktop-bar li#spirituality {
+  margin-right: 965px; /* Adjust the margin for the "Spirituality" list item */
+}
+
+.desktop-bar li#home {
+  font-weight: bold;
+}
+
+
+
+.desktop-bar a {
+  text-decoration: none;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Arial, sans-serif;
+  font-size: 13px;
+}
+
+
+.live-time {
+  
+  top: 10px; /* Adjust the top and right values to position the time as desired */
+  right: 10px;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-align: right;
+}
